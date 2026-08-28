@@ -1,8 +1,11 @@
 
-
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
   return (
-    <div>ProjectCard</div>
-  )
-}
+    <div>
+        <h3>{project.title}</h3>
+      <p>{project.description}</p>
+
+    </div>
+  )}
+  
 export default ProjectCard
