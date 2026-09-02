@@ -5,30 +5,24 @@ import ProjectForm from './components/ProjectForm'
 import SearchBar from './components/SearchBar'
 import ProjectList from './components/ProjectList'
 
-//placeholder project showcase
 const initialProjects = [
   {
     id: 1,
-    title: 'Portfolio Site',
-    description: 'A responsive personal portfolio built with React and Vite.',
-    url: 'https://example.com',
-    tags: ['react', 'css'],
+    title: 'Plantsy',
+    description: 'A React hooks plant shop admin app - add plants, mark them sold out, and search inventory, backed by a JSON server API.',
+    url: 'https://github.com/malukivictor/react-hooks-plantshop-cr-vite',
   },
   {
     id: 2,
-    title: 'Task Manager',
-    description: 'A simple task manager app with localStorage persistence.',
-    url: 'https://example.com/tasks',
-    tags: ['vanilla', 'localStorage'],
+    title: 'Calculator',
+    description: 'A basic calculator app for performing everyday arithmetic operations.',
+    url: 'https://github.com/malukivictor/calculator',
   },
 ]
 
-
-
 function App() {
-  const [projects, setProjects] = useState([])
+  const [projects, setProjects] = useState(initialProjects)
   const [search, setSearch] = useState("")
-  
 
   const handleAddProject = (newProject) => {
     setProjects([...projects, newProject])
