@@ -9,7 +9,7 @@ const initialProjects = [
   {
     id: 1,
     title: 'Plantsy',
-    description: 'A React hooks plant shop admin app - add plants, mark them sold out, and search inventory for stock',
+    description: 'A React hooks plant shop admin app - add plants, mark them sold out, and search inventory, backed by a JSON server API.',
     url: 'https://github.com/malukivictor/react-hooks-plantshop-cr-vite',
   },
   {
