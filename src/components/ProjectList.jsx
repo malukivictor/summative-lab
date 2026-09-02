@@ -2,7 +2,7 @@ import ProjectCard from './ProjectCard'
 
 const ProjectList = ({ projects }) => {
   if (projects.length === 0) {
-    return <p className='m-4'>No projects found.</p>
+    return <p className='m-4'>No projects found, please try again.</p>
   }
 
   return (

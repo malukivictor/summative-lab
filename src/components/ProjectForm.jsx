@@ -19,7 +19,7 @@ const ProjectForm = ({ onAddProject }) => {
 
   return (
     <div className='border-2 border-black rounded-lg m-4 p-6'>
-      <h2 className='text-lg font-bold mb-2'>Add project</h2>
+      <h2 className='text-lg font-bold mb-2'>Add a project here</h2>
       <form onSubmit={handleSubmit} className='flex flex-col gap-2'>
         <label>
           Title
@@ -30,7 +30,7 @@ const ProjectForm = ({ onAddProject }) => {
        
     
         <label>
-          Description
+          Project description
           <textarea value={description} onChange={(event) => setDescription(event.target.value)}
           className='bg-white border text-left border-black rounded-md resize-none w-full px-2 py-1'/>
         </label>
