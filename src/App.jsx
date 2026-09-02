@@ -5,9 +5,30 @@ import ProjectForm from './components/ProjectForm'
 import SearchBar from './components/SearchBar'
 import ProjectList from './components/ProjectList'
 
+//placeholder project showcase
+const initialProjects = [
+  {
+    id: 1,
+    title: 'Portfolio Site',
+    description: 'A responsive personal portfolio built with React and Vite.',
+    url: 'https://example.com',
+    tags: ['react', 'css'],
+  },
+  {
+    id: 2,
+    title: 'Task Manager',
+    description: 'A simple task manager app with localStorage persistence.',
+    url: 'https://example.com/tasks',
+    tags: ['vanilla', 'localStorage'],
+  },
+]
+
+
+
 function App() {
   const [projects, setProjects] = useState([])
   const [search, setSearch] = useState("")
+  
 
   const handleAddProject = (newProject) => {
     setProjects([...projects, newProject])
