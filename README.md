@@ -1,16 +1,34 @@
-# React + Vite
+# Personal Project Showcase App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app for showcasing personal projects. No backend - all data lives in local component state.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- View a list of projects as cards
+- Search projects by title
+- Add a new project via a form
+- Each project links out to its GitHub repo
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
 
-## Expanding the ESLint configuration
+## Getting Started
+npm install
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Open the local URL Vite prints in your terminal to view the app.
+## Project Structure
+- `App.jsx` - top-level state and layout
+- `Header.jsx` - page title
+- `ProjectForm.jsx` - form to add a new project
+- `SearchBar.jsx` - filters the project list by title
+- `ProjectList.jsx` - renders the list of `ProjectCard`s
+- `ProjectCard.jsx` - displays a single project
+
+## Notes
+
+Projects added through the form are stored only in memory and reset when page refresh.
